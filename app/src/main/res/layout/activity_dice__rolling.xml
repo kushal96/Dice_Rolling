@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp">
+
+    <!--first row of dice images-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowOne"
+        android:layout_marginTop="56dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/dice1"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/dice_side_1"/>
+        <ImageView
+            android:id="@+id/dice2"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/dice_side_2" />
+
+        <ImageView
+            android:id="@+id/dice3"
+            android:layout_margin="5dp"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:src="@drawable/dice_side_3" />
+    </LinearLayout>
+
+    <!--second row of dice images-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rowOne"
+        android:layout_marginTop="56dp"
+        android:id="@+id/rowTwo"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/dice4"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/dice_side_4"
+            />
+        <ImageView
+            android:id="@+id/dice5"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/dice_side_5"/>
+
+        <ImageView
+            android:id="@+id/dice6"
+            android:layout_margin="5dp"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:src="@drawable/dice_side_6" />
+
+    </LinearLayout>
+
+    <!--number input for dice rolling-->
+    <EditText
+        android:id="@+id/getDiceValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Enter the number"
+        android:layout_marginTop="400dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rowTwo" />
+
+
+        />
+
+    <!--asked question to user for number input-->
+    <TextView
+        android:id="@+id/textViewQues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+        android:text="How many dices do you want to roll?\n Please give input below"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--Button for making dice rolled-->
+    <Button
+        android:id="@+id/dice_roll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rowTwo"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="#364156"
+        android:text="Click here to Roll Dice or Shake phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getDiceValue"  />
+
+</RelativeLayout>

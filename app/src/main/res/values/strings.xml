@@ -1,0 +1,4 @@
+<!--string used for application name-->
+<resources>
+    <string name="app_name">My Dice</string>
+</resources>

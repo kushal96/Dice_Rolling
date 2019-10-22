@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Colors used for layout and navigation and button elements-->
+<resources>
+    <color name="colorPrimary">#364156</color>
+    <color name="colorPrimaryDark">#212D40</color>
+    <color name="colorAccent">#364156</color>
+</resources>
